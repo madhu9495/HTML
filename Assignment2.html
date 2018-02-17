@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Xena </title>
+<style>
+*{
+margin: 0px; padding: 0px;
+}
+body{
+	background: lightblue;
+	display: block;
+	color:black;
+	line-height:30px;
+	text-align: center;
+	font-family:cursive;
+	font-size: 20px;
+}
+#header{
+	width:100%;
+	height: 80px;
+	background: #333;
+}
+#navbar{
+	width:1000px;
+	height: 80px;
+	float:right;
+}
+#navbar>li{
+	width:200px;
+	list-style: none;
+	float: left;
+}
+li>a{
+	display: block;
+	color:white;
+	line-height:80px;
+	text-align: center;
+	font-family:cursive;
+	font-size: 20px;
+	text-decoration:none;
+}
+#logo{
+	width: 300px;
+	height: 80px;
+	float: left;
+}
+table {
+    border-collapse: collapse;
+    width: 50%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+</style>
+<meta name="viewport" content="width=device-width initial-scale=1">
+</head>
+<body>
+<div id=header>
+<div id="logo">
+<img src="xena.png">
+</div>
+<ul id="navbar">
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</div>
+<br><br>
+<h3 >Hot ballon Riding event 28th Feb 2018</h3>
+<br><br>
+<h3>Register Here</h3>
+<br><br>
+<center><form name="Registration" method="post">
+<table  border="1">
+<col width="130">
+<col width="80">
+<tr><td>Name:</td><td><input name="name" type="text" required/></td></tr>
+<tr><td>Age:</td><td><input name="age" type="number"  min="18" max="100" required/></td></tr>
+<tr><td>Email</td><td><input type="email" pattern="[a-zA-Z0-9!#$%&amp;'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*" required /></td></tr>
+<tr><td>City</td><td><input list="cities" name="city" required>
+  <datalist id="cities">
+  	 <option value="Rajkot">
+    <option value="Vizag">
+    <option value="Delhi">
+    <option value="Chennai">
+    <option value="Goa">
+    <option value="Bangalore"></td></tr>
+<tr><td colspan="2"><input type="submit" value="Submit"></td></tr>
+</table>
+</form>
+</center>
+</body>
+</html>

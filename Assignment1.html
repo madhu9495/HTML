@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    background-color: lightblue;
+}
+table {
+    border-collapse: collapse;
+    width: 50%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+</style></head>
+<body>
+<br><br>
+<table align="center" border="1" width="40%">
+<tr><th>TICKER</th><th>PRICE</th></tr>
+<tr><td>WIPRO</td><td>298.45</td></tr>
+<tr><td>INFY</td><td>949.95</td></tr>
+<tr><td>TCS</td><td>2713.70</td></tr>
+<tr><td>TECHM</td><td>485.85</td></tr>
+</table>
+<br><br><br>
+<center><h1>Stock Trading</h1></center>
+<br><br>
+<form name="Stock Trading" method="post">
+<table align="center" border="1">
+<col width="130">
+<col width="80">
+<tr><td>Ticker:</td><td><input name="ticker" type="text"/></td></tr>
+<tr><td>Quantity:</td><td><input name="quantity" type="number" step="10" min="10" max="100" /></td></tr>
+<tr><td colspan="2"><input type="submit" value="Submit"></td></tr>
+</form>
+</body>
+</html>
