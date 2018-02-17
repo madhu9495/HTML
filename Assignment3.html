@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Awesome Online Videos</title>
+<style>
+#header{
+	width: 100%;
+	background: #303636;
+	background-size: cover;
+}
+
+#logo{
+	float: left;
+	
+}
+
+#heading{
+	display: block;
+	color:white;
+	line-height:80px;
+	text-align: left;
+	font-family:cursive;
+	font-size: 30px;
+}
+#video{
+width: 100%;
+background: #b3cce6;	
+background-size: cover;
+}
+#content{
+width: 100%;
+background: #b3cce6;	
+background-size: cover;
+text-align: left;
+display: block;
+color:black;
+font-family:cursive;
+}
+</style>
+</head>
+<body>
+<body>
+<div id="header">
+<div id="logo">
+<img src="logo3.jpg"height="80" width="100">
+</div>
+<div id="heading">
+Awesome Online Videos
+</div>
+</div>
+<div id=content>
+<br>Video of the week Check it!!</div>
+<div id="video">
+<video id="myvideo" width="800" height="500" >  <source src="movie.mp4" type="video/mp4">
+</video>
+</div>
+<div>
+    <button onclick="document.getElementById('myvideo').play()">Play</button>
+    <button onclick="document.getElementById('myvideo').pause()">Pause</button>
+</div>
+</body>
+</html>
