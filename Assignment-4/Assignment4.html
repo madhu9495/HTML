@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>ASDG</title>
+    <script src="Scripts/jquery-1.6.min.js" type="text/javascript"></script>
+    <script src="Scripts/canvasChart.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            var dataDef = { title: "Statistics of Bajra from 2001 to 2007",
+                            xLabel: 'Year', 
+                            yLabel: 'Lakh Tonnes',
+                            labelFont: '19pt Arial', 
+                            dataPointFont: '10pt Arial',
+                            renderTypes: [CanvasChart.renderType.lines, CanvasChart.renderType.points],
+                            dataPoints: [{ x: '2001', y: 281 }, 
+                                         { x: '2002', y: 277 }, 
+                                         { x: '2003', y: 275 }, 
+                                         { x: '2004', y: 457 },
+                                         { x: '2005', y: 200 },
+                                         { x: '2006', y: 280 }, 
+                                         { x: '2007', y: 150 }
+                                         ]
+                           };
+            CanvasChart.render('canvas', dataDef);
+        });
+
+    </script>
+	
+	<center><h1>Agricultural Statistical Department of GOI</h1></center>
+</head>
+<body style="margin-left:50px;margin-top:50px;">
+<br><br><br>
+    <canvas id="canvas" width="800" height="600"></canvas>
+</body>
+</html>
